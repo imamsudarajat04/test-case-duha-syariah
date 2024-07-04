@@ -71,7 +71,7 @@
                     </button>
                 </div>
                 <form action="{{ route('discount.apply') }}" method="POST">
-                    @csrf
+                    {{-- @csrf --}}
                     <div class="modal-body">
                         <div class="form-group">
                             <label for="discount_code">Discount code</label>

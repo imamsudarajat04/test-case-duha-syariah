@@ -11,7 +11,7 @@
                         <h5 class="card-title">{{ $product->name }}</h5>
                         <p class="card-text">Rp. {{ number_format($product->price, 0, ',', '.') }}</p>
                         <form action="{{ route('cart.add', $product->id) }}" method="POST">
-                            @csrf
+                            {{-- @csrf --}}
                             <button type="submit" class="btn btn-primary">Add to Cart</button>
                         </form>
                     </div>
