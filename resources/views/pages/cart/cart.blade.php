@@ -44,7 +44,7 @@
                 </tr>
             @endforeach
             <tr>
-                <td colspan="3" class="text-right">
+                <td colspan="2" class="text-right">
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-success" data-toggle="modal" data-target="#discountModal">
                         Gunakan Kode Diskon/Reward
@@ -53,8 +53,11 @@
                 <td>
                     <h5>DISKON: Rp. {{ number_format($discountAmount ?? 0, 0, ',', '.') }}</h5>
                 </td>
+                <td>
+                    <h5>TOTAL: Rp. {!! number_format($subtotal, 0, ',', '.') !!}</h5>
+                </td>
                 <td class="text-right">
-                    <h5>TOTAL: Rp. {{ number_format($total ?? $subtotal, 0, ',', '.') }}</h5>
+                    <h5>GRANTOTAL: Rp. {{ number_format($total ?? $subtotal, 0, ',', '.') }}</h5>
                 </td>
             </tr>
         </tbody>

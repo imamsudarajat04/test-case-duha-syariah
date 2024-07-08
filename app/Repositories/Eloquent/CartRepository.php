@@ -54,4 +54,12 @@ class CartRepository implements CartRepositoryInterface
             return $item->product->price * $item->quantity;
         });
     }
+
+    public function total()
+    {
+        // $cartItems = $this->getAllCartItems();
+        // return $cartItems->sum(function ($item)) {
+        //     return 
+        // }
+    }
 }
